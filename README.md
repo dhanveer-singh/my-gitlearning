@@ -9,23 +9,23 @@ To check git version: git --version
 git config --global user.name username<br>
 git config --globla user.email email<br>
 
-#Initialise git in a folder<br>
+<b>#Initialise git in a folder</b><br>
 git init 
 
-#To show all folder and files<br>
+<b>#To show all folder and files</b><br>
 ls --lart
 
-#To displays the state of the working directory and the staging area<br>
+<b>#To displays the state of the working directory and the staging area</b><br>
 git status
 
-#add a file as it looks now to your next commit (stage)<br>
+<b>#add a file as it looks now to your next commit (stage)</b><br>
 git add [filename]
 
-#add the files or changes to the repository<br>
+<b>#add the files or changes to the repository</b><br>
 git add --a
 
-#commit your staged content as a new commit snapshot<br>
+<b>#commit your staged content as a new commit snapshot</b><br>
 git commit -m “[descriptive message]”
 
-#To create new file via gitbash<br>
+<b>#To create new file via gitbash</b><br>
 touch [filename]
