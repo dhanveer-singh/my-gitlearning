@@ -1,37 +1,73 @@
 # gitlearning
 This repo is a part of learning about Git and Github
 
-Download and setup git:     https://git-scm.com/
+<h2>Git Download and Installation</h2>
+Git Download Link: https://git-scm.com/
 
 To check git version: git --version
 
-<b>#For Username and email setup</b><br>
-git config --global user.name username<br>
-git config --globla user.email email<br>
+<h2>SETUP</h2>
+<p>Configuring user information used across all local repositories</p>
+<ol>
+    <li>
+        <b>#For Username and email setup</b><br>
+        <code> git config --global user.name username</code> <br>
+        <code>git config --globla user.email email</code>
+    </li>
+</ol>
 
-<b>#Initialise git in a folder</b><br>
-git init 
-
-<b>#To show all folder and files</b><br>
-ls --lart
-
-<b>#To displays the state of the working directory and the staging area</b><br>
-git status
-
-<b>#add a file as it looks now to your next commit (stage)</b><br>
-git add [filename]
-
-<b>#add the files or changes to the repository</b><br>
-git add --a
-
-<b>#Remove or untrack added file from staging-area</b><br>
-git rm --cached [filename]
-
-<b>#Remove or Delete file from working directory</b><br>
-git rm [filename]
-
-<b>#commit your staged content as a new commit snapshot</b><br>
-git commit -m “[descriptive message]”
-
-<b>#To create new file via gitbash</b><br>
-touch [filename]
+<h2>Initialise git in a folder</h2>
+<ol>
+    <li>
+        <b>#Initialize an existing directory as a Git repository</b><br>
+        <code>git init</code>
+    </li>
+    <li>
+        <b>#To show all folder and files</b><br>
+        <code>ls --lart</code>
+    </li>
+    <li>
+        <b>#To displays the state of the working directory and the staging area</b><br>
+        <code>git status</code>
+    </li>
+    <li>
+        <b>#To displays the state of the working directory and the staging area</b><br>
+        <code>git status</code>
+    </li>
+    <li>
+        <b>#To create new file via gitbash</b><br>
+        <code>touch [filename]</code>
+    </li>
+    <li>
+        <b>#add a file as it looks now to your next commit (stage)</b><br>
+        <code>git add [filename]</code>
+    </li>
+    <li>
+        <b>#add the files or changes to the repository</b><br>
+        <code>git add --a</code>
+    </li>
+    <li>
+        <b>#Remove or untrack added file from staging-area</b><br>
+        <code>git rm --cached [filename]</code>
+    </li>
+    <li>
+        <b>#Remove or Delete file from working directory</b><br>
+        <code>git rm [filename]</code>
+    </li>
+    <li>
+        <b>#commit your staged content as a new commit snapshot</b><br>
+        <code>git commit -m “[descriptive message]”</code>
+    </li>
+    <li>
+        <b>#Create New Branch from master branch</b><br>
+        <code>git branch [branchname] or git checkout -b [branchname]</code>
+    </li>
+    <li>
+        <b>#Check all existing branches</b><br>
+        <code>git branch</code>
+    </li>
+    <li>
+        <b>#Switch to another branch</b><br>
+        <code>git checkout [branchname]</code>
+    </li>
+</ol>
