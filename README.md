@@ -24,6 +24,12 @@ git add [filename]
 <b>#add the files or changes to the repository</b><br>
 git add --a
 
+<b>#Remove or untrack added file from staging-area</b><br>
+git rm --cached [filename]
+
+<b>#Remove or Delete file from working directory</b><br>
+git rm [filename]
+
 <b>#commit your staged content as a new commit snapshot</b><br>
 git commit -m “[descriptive message]”
 
