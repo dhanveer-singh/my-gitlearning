@@ -6,12 +6,12 @@ Git Download Link: https://git-scm.com/
 
 To check git version: git --version
 
-<h2>SETUP</h2>
+<h2>Setup</h2>
 <p>Configuring user information used across all local repositories</p>
 <ol>
     <li>
-        <b>#For Username and email setup</b><br>
-        <code> git config --global user.name username</code> <br>
+        <b>#Username and email setup</b><br>
+        <code>git config --global user.name username</code> <br>
         <code>git config --globla user.email email</code>
     </li>
 </ol>
@@ -23,27 +23,23 @@ To check git version: git --version
         <code>git init</code>
     </li>
     <li>
-        <b>#To show all folder and files</b><br>
+        <b>#show all folder and files List</b><br>
         <code>ls --lart</code>
     </li>
     <li>
-        <b>#To displays the state of the working directory and the staging area</b><br>
+        <b>#Displays the state of the working directory and the staging area</b><br>
         <code>git status</code>
     </li>
     <li>
-        <b>#To displays the state of the working directory and the staging area</b><br>
-        <code>git status</code>
-    </li>
-    <li>
-        <b>#To create new file via gitbash</b><br>
+        <b>#Create new file via gitbash</b><br>
         <code>touch [filename]</code>
     </li>
     <li>
-        <b>#add a file as it looks now to your next commit (stage)</b><br>
+        <b>#Add a file as it looks new to your next commit (stage)</b><br>
         <code>git add [filename]</code>
     </li>
     <li>
-        <b>#add the files or changes to the repository</b><br>
+        <b>#Add all files or changes to the repository</b><br>
         <code>git add --a</code>
     </li>
     <li>
@@ -55,9 +51,14 @@ To check git version: git --version
         <code>git rm [filename]</code>
     </li>
     <li>
-        <b>#commit your staged content as a new commit snapshot</b><br>
+        <b>#Commit your staged content as a new commit snapshot</b><br>
         <code>git commit -m “[descriptive message]”</code>
     </li>
+</ol>
+
+<h2>Branch & Merge</h2>
+<p>Isolating work in branches, changing context, and integrating changes</p>
+<ol>
     <li>
         <b>#Create New Branch from master branch</b><br>
         <code>git branch [branchname] or git checkout -b [branchname]</code>
