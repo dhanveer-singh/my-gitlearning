@@ -21,6 +21,9 @@ git status
 #add a file as it looks now to your next commit (stage)<br>
 git add [filename]
 
+#add the files or changes to the repository<br>
+git add --a
+
 #commit your staged content as a new commit snapshot<br>
 git commit -m “[descriptive message]”
 
