@@ -10,13 +10,14 @@ To check git version: git --version
 <p>Configuring user information used across all local repositories</p>
 <ol>
     <li>
-        <b>#Username and email setup</b><br>
-        <code>git config --global user.name username</code> <br>
-        <code>git config --globla user.email email</code>
+        <b>#Username/email and Password setup</b><br>
+        <code>git config --global user.name [username]</code> <br>
+        <code>git config --global user.email [email]</code> <br>
+        <code>git config --global user.password [password]</code>
     </li>
 </ol>
 
-<h2>Initialise git in a folder</h2>
+<h2>Initialise git inside your project</h2>
 <ol>
     <li>
         <b>#Initialize an existing directory as a Git repository</b><br>
@@ -39,7 +40,7 @@ To check git version: git --version
         <code>git add [filename]</code>
     </li>
     <li>
-        <b>#Add all files or changes to the repository</b><br>
+        <b>#Add all files or new changes to the repository</b><br>
         <code>git add --a</code>
     </li>
     <li>
