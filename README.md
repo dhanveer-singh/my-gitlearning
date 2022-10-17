@@ -1,12 +1,16 @@
-# gitlearning
-This repo is a part of learning about Git and Github
+
+# What is Git ?
+<blockquote>
+Git is a distributed version control system that helps developers collaborate on projects of any scale. <br>
+    Linus Torvalds, the developer of the Linux kernel, created Git in 2005 to help control the Linux kernel's development.
+</blockquote>
 
 <h2>Git Download and Installation</h2>
 Git Download Link: https://git-scm.com/
 
 To check git version: git --version
 
-<h2>Setup</h2>
+<h2>Git Setup</h2>
 <p>Configuring user information used across all local repositories</p>
 <ol>
     <li>
@@ -17,6 +21,15 @@ To check git version: git --version
     </li>
 </ol>
 
+<h2>How to check your Git configuration:</h2>
+<p>The command below returns a list of information about your git configuration including user name and email:</p>
+<ol>
+    <li>
+        <b>#Check your Git configuration</b><br>
+        <code>git config -l</code> <br>
+    </li>
+</ol>
+
 <h2>Initialise git inside your project</h2>
 <ol>
     <li>
@@ -24,7 +37,11 @@ To check git version: git --version
         <code>git init</code>
     </li>
     <li>
-        <b>#show all folder and files List</b><br>
+        <b>#Remove .git repository from project</b><br>
+        <code>rm -fr .git</code>
+    </li>
+    <li>
+        <b>#Show all folder and files List</b><br>
         <code>ls --lart</code>
     </li>
     <li>
