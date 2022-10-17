@@ -47,16 +47,12 @@ If you want to use a different username or email address for a specific reposito
 # Initialise Git inside your project
 <ol>
     <li>
-        <b>How to initialize a Git repo?</b><br>
+        <b>How to initialize/add a git repo in your project?</b><br>
         <code>git init</code>
     </li>
     <li>
         <b>How to remove .git repo from your project?</b><br>
         <code>rm -fr .git</code>
-    </li>
-    <li>
-        <b>How to show all folder and files List</b><br>
-        <code>ls --lart</code>
     </li>
     <li>
         <b>Displays the state of the working directory and the staging area</b><br>
@@ -66,13 +62,21 @@ If you want to use a different username or email address for a specific reposito
         <b>Create new file via gitbash</b><br>
         <code>touch [filename]</code>
     </li>
-    <li>
+</ol>
+
+# Add file to the staging area in Git
+<ol>
+     <li>
         <b>Add a file as it looks new to your next commit (stage)</b><br>
         <code>git add [filename]</code>
     </li>
     <li>
         <b>Add all files or new changes to the repository</b><br>
         <code>git add --a</code>
+    </li>
+    <li>
+        <b>How to show list of folder and files?</b><br>
+        <code>ls --lart</code>
     </li>
     <li>
         <b>Remove or untrack added file from staging-area</b><br>
@@ -86,10 +90,6 @@ If you want to use a different username or email address for a specific reposito
         <b>Commit your staged content as a new commit snapshot</b><br>
         <code>git commit -m “[descriptive message]”</code>
     </li>
-</ol>
-# Add file to the staging area in Git
-<ol>
-    
 </ol>
 # Branch & Merge
 <p>Isolating work in branches, changing context, and integrating changes</p>
