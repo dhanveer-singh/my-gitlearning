@@ -87,6 +87,10 @@ If you want to use a different username or email address for a specific reposito
         <code>git rm [filename]</code>
     </li>
     <li>
+        <b>How to check origin URL of remote repo?</b><br>
+        <code>git remote -v”</code>
+    </li>
+    <li>
         <b>Commit your staged content as a new commit snapshot</b><br>
         <code>git commit -m “[descriptive message]”</code>
     </li>
