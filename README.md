@@ -95,6 +95,7 @@ If you want to use a different username or email address for a specific reposito
         <code>git commit -m “[descriptive message]”</code>
     </li>
 </ol>
+
 # Branch & Merge
 <p>Isolating work in branches, changing context, and integrating changes</p>
 <ol>
