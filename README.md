@@ -1,135 +1,91 @@
+## What is Git?
+- Git is an **open source, distributed version control system** that helps developers collaborate on projects of any scale.
+- Git is version-control system for tracking changes in source code during software development.
+- Its goal is to increase efficiency, speed and easily manage large projects through version controlling.
+- Linus Torvalds, the developer of the Linux kernel, created Git in 2005 to help control the Linux kernel's development.
 
-# What is Git?
-Git is an open source, distributed version control system that helps developers collaborate on projects of any scale.Linus Torvalds, the developer of the Linux kernel, created Git in 2005 to help control the Linux kernel's development.
 
-# Git Download and Installation
-Git Download Link: https://git-scm.com/
+## What is Git Bash?
+- Git Bash is an application for Microsoft Windows environments which provides an emulation layer for a Git command line experience.
+- Bash is an acronym for Bourne Again Shell.
+- A shell is a terminal application used to interface with an operating system through written commands.
+- Bash is a popular default shell on Linux and macOS.
+- Git Bash is a package that installs Bash, some common bash utilities, and Git on a Windows operating system.
 
-<blockquote>
-    Launch Git Bash after installation.
-</blockquote>
+## Git - Environment Setup
+- [Download Git from here](https://git-scm.com/)
 
-# What is Git Bash?
-Git Bash is an application for Microsoft Windows environments which provides an emulation layer for a Git command line experience. Bash is an acronym for Bourne Again Shell. A shell is a terminal application used to interface with an operating system through written commands. Bash is a popular default shell on Linux and macOS. Git Bash is a package that installs Bash, some common bash utilities, and Git on a Windows operating system.
+### Launch Git Bash after installation.
 
-<p>Check version in Git Bash:<p/>
-<code>git --version</code>
+- To open Git bash in working folder simply `right click` inside that folder then select `Git bash here`.
+- Check version in Git Bash: `$ git --version`
 
-# Configure Git 
-<p>Configuring user information used across all local repositories</p>
-<blockquote>
-If you want to use a different username or email address for a specific repository, run the git config command without the --global option from within the repository directory.
-</blockquote>
+### Getting Started - First-Time Git Setup
+Now that you have Git on your system, you’ll want to do a few things to customize your Git environment. You should have to do these things only once on any given computer.
 
-<ol>
-    <li>
-        <b>How to set your global username configuration?</b><br>
-        <code>git config --global user.name [username]</code> <br>
-    </li>
-     <li>
-        <b>How to set your global email configuration?</b><br>
-        <code>git config --global user.email [email]</code> <br>
-    </li>
-</ol>
 
-# Verify Git configuration
-The command below returns a list of information about your git configuration including user name and email.
+### Add or delete a record from Git config
+The first thing you should do when you install Git is to set your user name and email address. This is important because every Git commit uses this information, and it’s immutably baked into the commits you start creating:
 
-<ol>
-    <li>
-        <b>How to check your Git configuration?</b><br>
-        <code>git config --list</code> <br>
-    </li>
-</ol>
+Set your user name and email address.
 
-# Initialise Git inside your project
+    $ git config --global user.name "Your Name" 
+    $ git config --global user.email "your@email.com" 
 
-<ol>
-    <li>
-        <b>How to initialize/add a git repo in your project?</b><br>
-        <code>git init</code>
-    </li>
-    <li>
-        <b>Displays the state of the working directory and the staging area</b><br>
-        <code>git status</code>
-    </li>
-     <li>
-        <b>Create new file via gitbash</b><br>
-        <code>touch [filename]</code>
-    </li>
-    <li>
-        <b>How to remove .git repo from your project?</b><br>
-        <code>rm -rf .git</code>
-    </li>
-</ol>
-
-# Staging area
-The staging area can be described as a preview of your next commit.
-
-<ol>
-     <li>
-        <b>Add a file as it looks new to your next commit (stage)</b><br>
-        <code>git add [filename]</code>
-    </li>
-    <li>
-        <b>Add all files or new changes to the repository</b><br>
-        <code>git add --a</code>
-    </li>
-    <li>
-        <b>How to show list of folder and files?</b><br>
-        <code>ls --lart</code>
-    </li>
-    <li>
-        <b>Remove or untrack added file from staging-area</b><br>
-        <code>git rm --cached [filename]</code>
-    </li>
-    <li>
-        <b>Remove or Delete file from working directory</b><br>
-        <code>git rm [filename]</code>
-    </li>
-</ol>
-
-# Git Commit
-It is used to record the changes in the repository. It is the next command after the git add. Every commit contains the index data and the commit message.
-
-<ol>
-    <li>
-        <b>How to check origin URL of remote repo?</b><br>
-        <code>git remote -v</code>
-    </li>
-    <li>
-        <b>Commit your staged content as a new commit snapshot</b><br>
-        <code>git commit -m “[descriptive message]”</code>
-    </li>
-    <li>
-        <b>How to check history of commits?</b><br>
-        <code>git log -p -[Number of commits]</code>
-    </li>
-</ol>
-
-# Branch & Merge
-Isolating work in branches, changing context, and integrating changes.
-
-<ol>
-    <li>
-        <b>Create New Branch from master branch</b><br>
-        <code>git branch [branchname] or git checkout -b [branchname]</code>
-    </li>
-    <li>
-        <b>Check all existing branches</b><br>
-        <code>git branch</code>
-    </li>
-    <li>
-        <b>Switch to another branch</b><br>
-        <a>git checkout [branchname]</code>
-    </li>
-</ol>
-
-# Useful Links
-<ol>
-    <li>
-        <b>This tool will describe commands</b><br>
-        https://explainshell.com/
-    </li>
+Remove your user name and email address.
    
-</ol>
+    $ git config --global --unset user.name
+    $ git config --global --unset user.email
+
+If you want to check your configuration settings, you can use the `git config --list` command to list all the settings Git can find at that point.
+
+## Initialise Git in your project
+If you have a project directory that is currently not under version control and you want to start controlling it with Git, you first need to open Git Bash inside your project's directory. And Type below command:
+
+    $ git init
+This creates a new sub-directory named .git that contains all of your necessary repository files. At this point, nothing in your project is tracked yet.
+
+## Start tracking your project
+If you want to start version-controlling existing files, you should probably begin tracking. You can accomplish that with a few git commands that specify the files you want to track.
+
+### Tracking Files (Add Files)
+To add a file as it looks new to your next commit (stage) type below command:
+
+    $ git add <file>
+
+To add all files to the repository type below command:
+
+    $ git add --a
+
+At this point you have added single or all files (as per command entered) in staging area. To check
+the status of staging area just type: 
+    
+    $ git status
+### Tracking Files (Add More Files)
+In order to begin tracking a new file, you use the command `git add`. Let's say, you have a new README file. 
+To begin tracking the README file, you can run this:
+
+    $ git add README
+If you run your status command again, you can see that your README file is now tracked and staged to be committed.
+
+### Remove Files
+To Remove or untrack added file from staging-area just type below command:
+
+    $ git rm --cached <filename>
+To Remove or Delete file from working directory:
+
+    $ git rm <filename>
+## Committing Your Changes
+    
+    $ git commit -m "message"
+
+- The above command will make a commit with the given commit message. 
+- The commit command will commit the changes and generate a commit-id.
+
+## Pushing to Your Remotes
+
+
+
+## Useful links
+- [Git Books](https://git-scm.com/book/en/v2)
+- [Tool for Explaining Git Commands](https://explainshell.com/)
