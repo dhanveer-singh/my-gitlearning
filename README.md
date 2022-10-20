@@ -48,7 +48,7 @@ This creates a new sub-directory named .git that contains all of your necessary 
 ## Start tracking your project
 If you want to start version-controlling existing files, you should probably begin tracking. You can accomplish that with a few git commands that specify the files you want to track.
 
-### Tracking Files (Add Files)
+### Git add (Tracking Files)
 To add a file as it looks new to your next commit (stage) type below command:
 
     $ git add <file>
@@ -61,7 +61,7 @@ At this point you have added single or all files (as per command entered) in sta
 the status of staging area just type: 
     
     $ git status
-### Tracking Files (Add More Files)
+### Add More Files
 In order to begin tracking a new file, you use the command `git add`. Let's say, you have a new README file. 
 To begin tracking the README file, you can run this:
 
@@ -75,16 +75,19 @@ To Remove or untrack added file from staging-area just type below command:
 To Remove or Delete file from working directory:
 
     $ git rm <filename>
-## Committing Your Changes
+## Git commit (Committing Your Changes)
     
     $ git commit -m "message"
 
 - The above command will make a commit with the given commit message. 
 - The commit command will commit the changes and generate a commit-id.
 
-## Pushing to Your Remotes
-
-
+## Git diff (Compare changes)
+    $ git diff
+Above command will compare changes between the staging area and the working directory. Also if you want to
+compare changes between the staging area and against the previous commit just type bleow command:
+    
+    $ git diff --staged
 
 ## Useful links
 - [Git Books](https://git-scm.com/book/en/v2)
