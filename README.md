@@ -88,6 +88,24 @@ Above command will compare changes between the staging area and the working dire
 compare changes between the staging area and against the previous commit just type bleow command:
     
     $ git diff --staged
+    
+ ## git push
+The git push command is used to upload local repository content to a remote repository.
+
+    $ git branch -M main
+    $ git remote add origin git@github.com:[user name]/[repo name].git
+    $ git push -u origin main
+
+## git pull
+The git pull command is used to fetch and download content from a remote repository and immediately update the local repository to match that content. 
+
+    $ git clone https://github.com/[user name]/[repo name]
+
+## git clone
+git clone is primarily used to point to an existing repo and make a clone or copy of that repo at in a new directory, at another location.
+
+    $ git clone https://github.com/[user name]/[repo name]
+
 
 ## Useful links
 - [Git Books](https://git-scm.com/book/en/v2)
